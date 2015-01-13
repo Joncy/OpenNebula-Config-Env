@@ -40,14 +40,15 @@ then
     echo -e "${BB}Or: ./install_OpenNebula.sh --remove${W}" && exit
 fi
 if [ "$1" = "--remove" ]
-	apt-get remove opennebula 
-    	apt-get remove opennebula-sunstone
-	apt-get remove opennebula-tools
-	apt-get remove libopennebula-java-doc
-	apt-get remove libopennebula-java 
-	apt-get remove ruby-opennebula 
-	apt-get remove opennebula-common 
-	exit
+then
+    apt-get remove opennebula 
+    apt-get remove opennebula-sunstone
+    apt-get remove opennebula-tools
+    apt-get remove libopennebula-java-doc
+    apt-get remove libopennebula-java 
+    apt-get remove ruby-opennebula 
+    apt-get remove opennebula-common 
+    exit
 fi
 if [ "$1" = "--client" -o "$2" = "--client" ]
 then
